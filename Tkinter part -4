@@ -1,0 +1,32 @@
+"""""
+from tkinter import *
+root = Tk()
+root.geometry("720x450")
+root.title("MY GUI With Najmi")
+'''
+Important Label Option
+text - adds the text
+bd - background It is use for background color
+fg - foreground It is use for text color 
+font - sets the font
+1. font=("comicsansms", 19, "bold")
+2. font= "comicsansms 19 bold"
+padx - x padding It is use for padding
+pady - y padding It is use for padding
+relief - border styling - SUNKEN, RAISED, GROOVE, RIDGE
+'''
+title_label = Label(text='''Abdul Rashid Salim Salman Khan About this 27 December 1965)\n is an Indian film actor, producer, occasional singer and television personality. \n In a film career spanning over thirty years, Khan has received numerous awards,\n including two National Film Awards as a film producer, and two Awards for acting.\n He is cited in the media as one of the most commercially\n successful actors of both world and Indian cinema.\nForbes included him in their 2015 list of Top-Paid 100 Celebrity Entertainers in world;\n Khan tied with Amitabh Bachchan for No. 71 on the list, both with earnings of $33.5 million.''',bg="red",fg="white",padx=40,pady=82,font="comicsansms 19 bold",borderwidth=3,relief=SUNKEN)
+'''
+Important Pack options
+1. anchor = nw 'nw' This is a reading of compass
+2. side = top, bottom, left, right
+3. fill
+4. padx
+5. pady 
+'''
+
+
+title_label.pack(side=BOTTOM, anchor="sw",fill=X)
+
+root.mainloop()
+"""""
